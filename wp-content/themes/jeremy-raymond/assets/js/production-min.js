@@ -1,0 +1,1 @@
+!function(n){function i(i){i.each(function(){n(this).css("height",window.innerHeight+"px")})}n(document).ready(function(n){var e=n(".section");i(e),n(window).resize(function(){i(e)})})}(jQuery);
