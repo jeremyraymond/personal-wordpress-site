@@ -205,6 +205,26 @@ html {
 /*--------------------------------------------------------------
 2.0 Variables
 --------------------------------------------------------------*/
+/* =Font-face declarations
+-------------------------------------------------------------- */
+@font-face {
+  font-family: PuristaMedium;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/purista_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/purista_medium.woff2") format("woff2"), url("../fonts/purista_medium.woff") format("woff"), url("../fonts/purista_medium.ttf") format("truetype"), url("../fonts/purista_medium.svg#PuristaMedium") format("svg"); }
+
+@font-face {
+  font-family: PuristaLight;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/purista_light.eot?#iefix") format("embedded-opentype"), url("../fonts/purista_light.woff2") format("woff2"), url("../fonts/purista_light.woff") format("woff"), url("../fonts/purista_light.ttf") format("truetype"), url("../fonts/purista_light.svg#PuristaLight") format("svg"); }
+
+@font-face {
+  font-family: Tinos;
+  font-style: normal;
+  font-weight: normal;
+  src: url("..fonts/Tinos-Regular.eot?#iefix") format("embedded-opentype"), url("..fonts/Tinos-Regular.woff2") format("woff2"), url("..fonts/Tinos-Regular.woff") format("woff"), url("..fonts/Tinos-Regular.ttf") format("truetype"), url("..fonts/Tinos-Regular.svg#Tinos") format("svg"); }
+
 /* =Variables
 -------------------------------------------------------------- */
 /*--------------------------------------------------------------
@@ -591,32 +611,32 @@ h1 {
   font-size: 75px;
   font-size: 4.6875rem;
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 h2 {
   font-size: 50px;
   font-size: 3.125rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 h3 {
   font-size: 35px;
   font-size: 2.1875rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 h4 {
   font-size: 24px;
   font-size: 1.5rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 h6 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 blockquote {
   background-color: #f7f7f7;
@@ -629,7 +649,7 @@ cite {
 
 strong, b {
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 a, a:visited {
   transition: all 200ms ease-in-out;
@@ -664,7 +684,7 @@ ol:nth-child(n+2) {
   margin-bottom: 0; }
 
 .entry-title {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   text-align: center; }
   @media screen and (min-width: 0) {
     .entry-title {
@@ -681,7 +701,7 @@ ol:nth-child(n+2) {
 
 #primary,
 #secondary {
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
+  font-family: Tinos; }
 
 /*--------------------------------------------------------------
 5.0 Components/Add-ons
@@ -692,7 +712,7 @@ ol:nth-child(n+2) {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   margin: 10px 0;
   padding: 20px;
   transition: all 200ms ease-in-out; }
@@ -701,14 +721,14 @@ ol:nth-child(n+2) {
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   #submit:hover {
     background: black;
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   #submit:hover {
     background-color: #555; }
@@ -719,7 +739,7 @@ ol:nth-child(n+2) {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   margin: 10px 0;
   padding: 20px;
   transition: all 200ms ease-in-out; }
@@ -728,14 +748,14 @@ ol:nth-child(n+2) {
     border: solid 5px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   .neat-button:hover {
     background: #f2f2f2;
     border: solid 5px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
 
 .neat-3d-button {
@@ -759,7 +779,7 @@ ol:nth-child(n+2) {
     border-bottom: solid 3px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   .neat-3d-button:hover {
     background: #f2f2f2;
@@ -769,7 +789,7 @@ ol:nth-child(n+2) {
     border-bottom: solid 3px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
 
 input[type="submit"] {
@@ -778,7 +798,7 @@ input[type="submit"] {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   margin: 10px 0;
   padding: 20px;
   transition: all 200ms ease-in-out;
@@ -789,14 +809,14 @@ input[type="submit"] {
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   input[type="submit"]:hover {
     background: black;
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   input[type="submit"]:hover {
     background-color: #999999;
@@ -823,21 +843,19 @@ input#s {
 body {
   background-color: #fff;
   color: #000;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: Tinos;
   line-height: 1.5em;
   word-break: break-word; }
 
-#page {
+#main {
+  padding: 0 50px;
   max-width: 71.25em;
   margin-left: auto;
   margin-right: auto; }
-  #page::after {
+  #main::after {
     clear: both;
     content: "";
     display: table; }
-
-#main {
-  padding: 0 50px; }
 
 #primary {
   margin: 0 auto;
@@ -894,43 +912,60 @@ body {
 /*--------------------------------------------------------------
     6.1 Layout and Structure
     --------------------------------------------------------------*/
-.site-branding {
-  text-align: center; }
-  .site-branding .site-title {
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    padding: 40px; }
-    @media screen and (min-width: 0) {
-      .site-branding .site-title {
-        font-size: 35px;
-        font-size: 2.1875rem; } }
-    @media screen and (min-width: 30em) {
-      .site-branding .site-title {
-        font-size: 55px;
-        font-size: 3.4375rem; } }
-    @media screen and (min-width: 48em) {
-      .site-branding .site-title {
-        font-size: 75px;
-        font-size: 4.6875rem; } }
-    .site-branding .site-title a, .site-branding .site-title a:visited {
-      line-height: 1; }
-  .site-branding .site-description {
-    padding: 25px 0;
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-    font-style: italic; }
-    @media screen and (min-width: 0) {
-      .site-branding .site-description {
-        font-size: 15px;
-        font-size: 0.9375rem; } }
-    @media screen and (min-width: 30em) {
-      .site-branding .site-description {
-        font-size: 18px;
-        font-size: 1.125rem; } }
-    @media screen and (min-width: 48em) {
-      .site-branding .site-description {
-        font-size: 25px;
-        font-size: 1.5625rem; } }
+#masthead {
+  background: black; }
+  #masthead .site-branding {
+    text-align: center;
+    background: black url("../images/glasses.png") no-repeat center 70px;
+    background-size: contain;
+    max-width: 1300px;
+    margin: 0 auto; }
+    #masthead .site-branding .site-title {
+      font-family: PuristaMedium;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 21px; }
+      @media screen and (min-width: 0) {
+        #masthead .site-branding .site-title {
+          padding-top: 20px;
+          background: none; } }
+      @media screen and (min-width: 30em) {
+        #masthead .site-branding .site-title {
+          padding-top: 40px; } }
+      @media screen and (min-width: 48em) {
+        #masthead .site-branding .site-title {
+          font-size: 36px;
+          font-size: 2.25rem;
+          padding-top: 19%;
+          background: url("../images/lines.png") no-repeat center 75%; } }
+      #masthead .site-branding .site-title a, #masthead .site-branding .site-title a:visited {
+        line-height: 1; }
+    #masthead .site-branding .site-description {
+      padding: 25px 0 100px 0;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-family: PuristaLight; }
+      @media screen and (min-width: 48em) {
+        #masthead .site-branding .site-description {
+          font-size: 16px;
+          font-size: 1rem; } }
+    #masthead .site-branding .aboutme-link {
+      color: #F60022;
+      font-family: PuristaMedium;
+      font-size: 14px;
+      letter-spacing: 5px;
+      background: url("../images/what-i-do-red.png") no-repeat 0 bottom;
+      display: block;
+      width: 187px;
+      height: 50px;
+      text-decoration: none;
+      transition: background 0.5s, color 0.5s; }
+      #masthead .site-branding .aboutme-link:hover {
+        color: white;
+        background-image: url("../images/what-i-do-white.png"); }
 
 /*--------------------------------------------------------------
     6.2 Navigation
@@ -1321,7 +1356,7 @@ nav.post-navigation {
 #breadcrumbs {
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: Tinos;
   padding: 20px 0 20px 50px; }
 
 /* =Media
