@@ -1,1 +1,1 @@
-!function(n){function i(i){i.each(function(){n(this).css("height",window.innerHeight+"px")})}n(document).ready(function(n){var e=n(".section");i(e),n(window).resize(function(){i(e)})})}(jQuery);
+!function(i){function n(n,t){n.each(function(){if(t){var n=i(this).css("height");i(this).css("min-height",n)}i(this).css("height",window.innerHeight+"px")})}i(document).ready(function(i){var t=!0,e=i(".section");n(e,t),t=!1,i(window).resize(function(){n(e,t)})})}(jQuery);
