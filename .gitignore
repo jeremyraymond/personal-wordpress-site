@@ -1,6 +1,6 @@
 # Files in the root directory
 license.txt
-index.php
+/index.php
 readme.html
 wp-activate.php
 wp-blog-header.php
@@ -23,4 +23,6 @@ wp-admin/*
 wp-includes/*
 wp-content/plugins/akismet/*
 wp-content/themes/jeremy-raymond/CHANGELOG.md
-wp-content/plugins/hello.php
+wp-content/plugins/
+wp-content/index.php
+wp-content/themes/index.php

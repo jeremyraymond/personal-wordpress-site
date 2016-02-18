@@ -71,7 +71,7 @@ body{background-color:#fff;color:#000;font-family:Tinos;line-height:1.5em;word-b
 #primary:last-child{margin-right:0}}#primary ul{list-style:none}#primary ul li{list-style-type:square}
 #secondary{margin:20px auto;padding:0 30px 0 0;width:100%}@media screen and (min-width:0){#secondary{float:left;display:block;margin-right:14.28571%;width:100%;padding:30px}
 #secondary:last-child{margin-right:0}}@media screen and (min-width:48em){#secondary{float:left;display:block;margin-right:4.34783%;width:30.43478%;margin-right:0}
-#secondary:last-child{margin-right:0}}#masthead{background:black}#masthead .site-branding{text-align:center;background:black url("../images/glasses.png") no-repeat center 70px;background-size:contain;max-width:1300px;margin:0 auto}
+#secondary:last-child{margin-right:0}}#masthead{background:black}#masthead .site-branding{text-align:center;background:black url("../images/glasses.png") no-repeat center 70px;background-size:contain;max-width:1300px;margin:0 auto;padding-bottom:100px}
 #masthead .site-branding .site-title{font-family:PuristaMedium;color:white;text-transform:uppercase;letter-spacing:21px}
 @media screen and (min-width:0){#masthead .site-branding .site-title{padding-top:20px;background:0}
 }@media screen and (min-width:30em){#masthead .site-branding .site-title{padding-top:40px}
@@ -79,9 +79,9 @@ body{background-color:#fff;color:#000;font-family:Tinos;line-height:1.5em;word-b
 }#masthead .site-branding .site-title a,#masthead .site-branding .site-title a:visited{line-height:1}
 #masthead .site-branding .site-description{padding:25px 0 100px 0;color:white;text-transform:uppercase;letter-spacing:8px;font-size:12px;font-size:.75rem;font-family:PuristaLight}
 @media screen and (min-width:48em){#masthead .site-branding .site-description{font-size:16px;font-size:1rem}
-}#masthead .site-branding .aboutme-link{color:#f60022;font-family:PuristaMedium;font-size:14px;letter-spacing:5px;background:url("../images/what-i-do-red.png") no-repeat 0 bottom;display:block;width:187px;height:50px;text-decoration:none;transition:background .5s,color .5s}
-#masthead .site-branding .aboutme-link:hover{color:white;background-image:url("../images/what-i-do-white.png")}
-.flexnav{overflow:hidden;margin:0 auto;width:100%;max-height:0;-webkit-tranåsition:all .5s ease-in-out,width 0,height 0,top 0,left 0;transition:all .5s ease-in-out,width 0,height 0,top 0,left 0;-webkit-transform-style:preserve-3d}
+}#masthead .site-branding .aboutme-link{margin:0 auto;color:#f60022;font-family:PuristaMedium;font-size:14px;letter-spacing:5px;display:block;width:187px;height:52px;text-decoration:none;background:url("../images/what-i-do-white.png") no-repeat 0 bottom;transition:color .5s}
+#masthead .site-branding .aboutme-link img{transition:opacity .5s}#masthead .site-branding .aboutme-link:hover{color:white}
+#masthead .site-branding .aboutme-link:hover img{opacity:0}.flexnav{overflow:hidden;margin:0 auto;width:100%;max-height:0;-webkit-tranåsition:all .5s ease-in-out,width 0,height 0,top 0,left 0;transition:all .5s ease-in-out,width 0,height 0,top 0,left 0;-webkit-transform-style:preserve-3d}
 .flexnav.opacity{padding-left:0}.flexnav ul{padding-left:0}.flexnav.flexnav-show{max-height:2000px;transition:all .5s ease-in-out}
 .flexnav.one-page{position:fixed;top:50px;right:5%;max-width:200px}.flexnav li{font-size:100%;position:relative;overflow:hidden}
 .flexnav li a{position:relative;display:block;padding:.80em;z-index:2;overflow:hidden;color:#fff;background:#000;border-bottom:1px solid rgba(0,0,0,0.15);white-space:nowrap}

@@ -919,7 +919,8 @@ body {
     background: black url("../images/glasses.png") no-repeat center 70px;
     background-size: contain;
     max-width: 1300px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-bottom: 100px; }
     #masthead .site-branding .site-title {
       font-family: PuristaMedium;
       color: white;
@@ -953,19 +954,23 @@ body {
           font-size: 16px;
           font-size: 1rem; } }
     #masthead .site-branding .aboutme-link {
+      margin: 0 auto;
       color: #F60022;
       font-family: PuristaMedium;
       font-size: 14px;
       letter-spacing: 5px;
-      background: url("../images/what-i-do-red.png") no-repeat 0 bottom;
       display: block;
       width: 187px;
-      height: 50px;
+      height: 52px;
       text-decoration: none;
-      transition: background 0.5s, color 0.5s; }
+      background: url("../images/what-i-do-white.png") no-repeat 0 bottom;
+      transition: color 0.5s; }
+      #masthead .site-branding .aboutme-link img {
+        transition: opacity 0.5s; }
       #masthead .site-branding .aboutme-link:hover {
-        color: white;
-        background-image: url("../images/what-i-do-white.png"); }
+        color: white; }
+        #masthead .site-branding .aboutme-link:hover img {
+          opacity: 0; }
 
 /*--------------------------------------------------------------
     6.2 Navigation

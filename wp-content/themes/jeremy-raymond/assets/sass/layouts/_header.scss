@@ -6,6 +6,7 @@
         background-size: contain;
         max-width: 1300px;
         margin: 0 auto;
+        padding-bottom: 100px;
         .site-title {
             font-family: $title;
             color: white;
@@ -52,20 +53,26 @@
             font-family: $title-light;
         }
         .aboutme-link {
+            margin: 0 auto;
             color: #F60022;
             font-family: $title;
             font-size: 14px;
             letter-spacing: 5px;
-            background: url('../images/what-i-do-red.png') no-repeat 0 bottom;
             display: block;
             width: 187px;
-            height: 50px;
+            height: 52px;
             text-decoration: none;
-            @include transition( background 0.5s, color 0.5s );
-
+            background: url('../images/what-i-do-white.png') no-repeat 0 bottom;
+            @include transition( color 0.5s );
+            img {
+                @include transition( opacity 0.5s );
+            }
             &:hover {
                 color: white;
-                background-image: url('../images/what-i-do-white.png');
+                img {
+                    opacity: 0;
+                }
+
             }
         }
     }
