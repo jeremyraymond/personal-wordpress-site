@@ -1,0 +1,26 @@
+# Files in the root directory
+license.txt
+index.php
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# Subdirectories
+.idea/*
+wp-admin/*
+wp-includes/*
+wp-content/plugins/akismet/*
+wp-content/themes/jeremy-raymond/CHANGELOG.md
+wp-content/plugins/hello.php
