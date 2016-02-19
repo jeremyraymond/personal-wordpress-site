@@ -81,7 +81,7 @@ h4 {
 }
 h5 {
     @include fontSize(20px);
-    font-family: $title;
+    font-family: $title-light;
     font-weight: normal;
 }
 h6 {
@@ -106,12 +106,17 @@ a, a:visited {
     @include transition (all 200ms ease-in-out);
     color: $primary-font-color;
     text-decoration: none;
+    outline: 0;
 
     &:hover {
         @include transition (all 200ms ease-in-out);
         color: $link-color;
-    text-decoration: underline;
+        text-decoration: underline;
+        outline: 0;
     }
+}
+a:active, a:focus {
+    outline: 0;
 }
 
 .entry-meta,

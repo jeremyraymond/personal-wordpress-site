@@ -18,7 +18,7 @@
         </div>
     </div><!-- .entry-content -->
         <a id="mywork-link" class="nav-link" href="#contactme">
-            <span>CONTACT ME</span>
+            <span>GET IN TOUCH</span>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/what-i-do-grey.png">
         </a>
 

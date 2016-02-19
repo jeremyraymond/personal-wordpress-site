@@ -220,6 +220,12 @@ html {
   src: url("../fonts/purista_light.ttf") format("truetype"); }
 
 @font-face {
+  font-family: PuristaBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/purista_bold.ttf") format("truetype"); }
+
+@font-face {
   font-family: Tinos;
   font-style: normal;
   font-weight: normal;
@@ -639,7 +645,7 @@ h4 {
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: PuristaMedium;
+  font-family: PuristaLight;
   font-weight: normal; }
 
 h6 {
@@ -664,11 +670,16 @@ strong, b {
 a, a:visited {
   transition: all 200ms ease-in-out;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0; }
   a:hover, a:visited:hover {
     transition: all 200ms ease-in-out;
     color: #656565;
-    text-decoration: underline; }
+    text-decoration: underline;
+    outline: 0; }
+
+a:active, a:focus {
+  outline: 0; }
 
 .entry-meta a, .entry-meta a:visited,
 .entry-content a,
@@ -1631,7 +1642,7 @@ object {
   .entry-content .mywork-columns:last-child {
     margin-right: 0; }
   .entry-content .mywork-columns h4 {
-    margin-bottom: 20px; }
+    margin-bottom: 60px; }
 
 /*--------------------------------------------------------------
     7.5 Sidebar
@@ -1658,34 +1669,60 @@ object {
     --------------------------------------------------------------*/
 footer {
   float: left ;
+  background-color: #F60022;
   margin: 0 auto;
   padding: 0 40px;
   width: 100%; }
   footer .site-info {
-    margin: auto;
-    width: 100%; }
-  footer .footer-left {
-    float: left;
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px; }
+    footer .site-info::after {
+      clear: both;
+      content: "";
+      display: table; }
+    footer .site-info h4 {
+      font-family: PuristaBold;
+      margin-bottom: 75px; }
+    footer .site-info .footer-left, footer .site-info .footer-right {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 48.93617%;
+      font-family: Tinos;
+      font-size: 17px;
+      color: white;
+      letter-spacing: 0; }
+      footer .site-info .footer-left:last-child, footer .site-info .footer-right:last-child {
+        margin-right: 0; }
+      footer .site-info .footer-left img, footer .site-info .footer-right img {
+        margin: 0 45% 10px 45%; }
+    footer .site-info .footer-right img {
+      margin-top: -13px; }
+  footer #footer-link {
+    margin: 60px auto 0 auto;
+    color: white;
+    font-family: PuristaMedium;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
     display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    padding: 10px;
-    text-align: left; }
-    footer .footer-left:last-child {
-      margin-right: 0; }
-  footer .footer-right {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding: 10px;
-    text-align: right; }
-    footer .footer-right:last-child {
-      margin-right: 0; }
+    width: 187px;
+    height: 52px;
+    text-decoration: none;
+    background: url("../images/what-i-do-up-grey.png") no-repeat;
+    transition: color 0.5s; }
+    footer #footer-link img {
+      transition: opacity 0.5s; }
+    footer #footer-link:hover {
+      color: #656565; }
+      footer #footer-link:hover img {
+        opacity: 0; }
 
 /*--------------------------------------------------------------
     7.7 Accessibility
