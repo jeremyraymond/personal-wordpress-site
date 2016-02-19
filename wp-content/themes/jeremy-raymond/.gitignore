@@ -72,6 +72,8 @@ Rails
 
 # Misc #
 ###########
-assets/js/vendor/*
-library/*
-vendor/*
+assets/js/vendor/
+library/
+vendor/
+assets/images/
+assets/fonts/

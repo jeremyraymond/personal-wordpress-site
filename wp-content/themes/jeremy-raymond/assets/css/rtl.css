@@ -205,6 +205,32 @@ html {
 /*--------------------------------------------------------------
 2.0 Variables
 --------------------------------------------------------------*/
+/* =Font-face declarations
+-------------------------------------------------------------- */
+@font-face {
+  font-family: PuristaMedium;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/purista_medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: PuristaLight;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/purista_light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: PuristaBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/purista_bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: Tinos;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Tinos-Regular.ttf") format("truetype"); }
+
 /* =Variables
 -------------------------------------------------------------- */
 /*--------------------------------------------------------------
@@ -551,7 +577,10 @@ table {
   border-spacing: 0; }
 
 /*--------------------------------------------------------------
-4.0 Typography
+4.0 Custom Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.0 Typography
 --------------------------------------------------------------*/
 /* =Typographical Mixins/Functions
 -------------------------------------------------------------- */
@@ -591,36 +620,43 @@ h1 {
   font-size: 75px;
   font-size: 4.6875rem;
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h2 {
   font-size: 50px;
   font-size: 3.125rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h3 {
   font-size: 35px;
   font-size: 2.1875rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-family: PuristaLight;
+  font-weight: normal;
+  letter-spacing: 10px; }
 
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaLight;
+  font-weight: normal; }
 
 h6 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 blockquote {
   background-color: #f7f7f7;
-  border-right: solid 5px #f00;
+  border-right: solid 5px #656565;
   font-style: italic;
   padding: 20px; }
 
@@ -629,16 +665,21 @@ cite {
 
 strong, b {
   color: #000;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+  font-family: PuristaMedium; }
 
 a, a:visited {
   transition: all 200ms ease-in-out;
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+  outline: 0; }
   a:hover, a:visited:hover {
     transition: all 200ms ease-in-out;
-    color: #f00;
-    text-decoration: underline; }
+    color: #656565;
+    text-decoration: underline;
+    outline: 0; }
+
+a:active, a:focus {
+  outline: 0; }
 
 .entry-meta a, .entry-meta a:visited,
 .entry-content a,
@@ -646,15 +687,15 @@ a, a:visited {
 #secondary a,
 #secondary a:visited {
   transition: all 200ms ease-in-out;
-  color: #f00;
-  text-decoration: none; }
+  color: #656565;
+  text-decoration: underline; }
   .entry-meta a:hover, .entry-meta a:visited:hover,
   .entry-content a:hover,
   .entry-content a:visited:hover,
   #secondary a:hover,
   #secondary a:visited:hover {
     transition: all 200ms ease-in-out;
-    color: #f00;
+    color: #F60022;
     text-decoration: underline; }
 
 ul:nth-child(n+2) {
@@ -664,7 +705,7 @@ ol:nth-child(n+2) {
   margin-bottom: 0; }
 
 .entry-title {
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   text-align: center; }
   @media screen and (min-width: 0) {
     .entry-title {
@@ -681,10 +722,10 @@ ol:nth-child(n+2) {
 
 #primary,
 #secondary {
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif; }
+  font-family: Tinos; }
 
 /*--------------------------------------------------------------
-5.0 Components/Add-ons
+6.0 Components/Add-ons
 --------------------------------------------------------------*/
 #submit {
   background: #000;
@@ -692,7 +733,7 @@ ol:nth-child(n+2) {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   margin: 10px 0;
   padding: 20px;
   transition: all 200ms ease-in-out; }
@@ -701,14 +742,14 @@ ol:nth-child(n+2) {
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   #submit:hover {
     background: black;
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   #submit:hover {
     background-color: #555; }
@@ -719,7 +760,7 @@ ol:nth-child(n+2) {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   margin: 10px 0;
   padding: 20px;
   transition: all 200ms ease-in-out; }
@@ -728,14 +769,14 @@ ol:nth-child(n+2) {
     border: solid 5px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   .neat-button:hover {
     background: #f2f2f2;
     border: solid 5px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
 
 .neat-3d-button {
@@ -759,7 +800,7 @@ ol:nth-child(n+2) {
     border-bottom: solid 3px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   .neat-3d-button:hover {
     background: #f2f2f2;
@@ -769,7 +810,7 @@ ol:nth-child(n+2) {
     border-bottom: solid 3px #999999;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
 
 input[type="submit"] {
@@ -778,7 +819,7 @@ input[type="submit"] {
   border-radius: 0;
   box-shadow: none;
   clear: both;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: PuristaMedium;
   margin: 10px 0;
   padding: 20px;
   transition: all 200ms ease-in-out;
@@ -789,14 +830,14 @@ input[type="submit"] {
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   input[type="submit"]:hover {
     background: black;
     border: solid 5px #222222;
     border-radius: 0;
     box-shadow: none;
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: PuristaMedium;
     padding: 20px; }
   input[type="submit"]:hover {
     background-color: #999999;
@@ -816,30 +857,28 @@ input#s {
   display: block; }
 
 /*--------------------------------------------------------------
-6.0 Layout and Structure
+7.0 Layout and Structure
 --------------------------------------------------------------*/
 /* =Structure/Scaffolding
 -------------------------------------------------------------- */
 body {
   background-color: #fff;
   color: #000;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: Tinos;
   line-height: 1.5em;
   word-break: break-word;
   direction: rtl;
   unicode-bidi: embed; }
 
-#page {
+#main {
+  padding: 0 50px;
   max-width: 71.25em;
   margin-left: auto;
   margin-right: auto; }
-  #page::after {
+  #main::after {
     clear: both;
     content: "";
     display: table; }
-
-#main {
-  padding: 0 50px; }
 
 #primary {
   margin: 0 auto;
@@ -894,48 +933,70 @@ body {
         margin-right: 0; } }
 
 /*--------------------------------------------------------------
-    6.1 Layout and Structure
+    7.1 Layout and Structure
     --------------------------------------------------------------*/
-.site-branding {
-  text-align: center; }
-  .site-branding .site-title {
-    font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    padding: 40px; }
-    @media screen and (min-width: 0) {
-      .site-branding .site-title {
-        font-size: 35px;
-        font-size: 2.1875rem; } }
-    @media screen and (min-width: 30em) {
-      .site-branding .site-title {
-        font-size: 55px;
-        font-size: 3.4375rem; } }
-    @media screen and (min-width: 48em) {
-      .site-branding .site-title {
-        font-size: 75px;
-        font-size: 4.6875rem; } }
-    .site-branding .site-title a, .site-branding .site-title a:visited {
-      line-height: 1; }
-  .site-branding .site-description {
-    padding: 25px 0;
-    font-size: 20px;
-    font-size: 1.25rem;
-    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
-    font-style: italic; }
-    @media screen and (min-width: 0) {
-      .site-branding .site-description {
-        font-size: 15px;
-        font-size: 0.9375rem; } }
-    @media screen and (min-width: 30em) {
-      .site-branding .site-description {
-        font-size: 18px;
-        font-size: 1.125rem; } }
-    @media screen and (min-width: 48em) {
-      .site-branding .site-description {
-        font-size: 25px;
-        font-size: 1.5625rem; } }
+#masthead {
+  background: black; }
+  #masthead .site-branding {
+    text-align: center;
+    background: black url("../images/glasses.png") no-repeat center 70px;
+    background-size: contain;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 100px; }
+    #masthead .site-branding .site-title {
+      font-family: PuristaMedium;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 21px; }
+      @media screen and (min-width: 0) {
+        #masthead .site-branding .site-title {
+          padding-top: 20px;
+          background: none; } }
+      @media screen and (min-width: 30em) {
+        #masthead .site-branding .site-title {
+          padding-top: 40px; } }
+      @media screen and (min-width: 48em) {
+        #masthead .site-branding .site-title {
+          font-size: 36px;
+          font-size: 2.25rem;
+          padding-top: 19%;
+          background: url("../images/lines.png") no-repeat center 75%; } }
+      #masthead .site-branding .site-title a, #masthead .site-branding .site-title a:visited {
+        line-height: 1; }
+    #masthead .site-branding .site-description {
+      padding: 25px 0 100px 0;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-family: PuristaLight; }
+      @media screen and (min-width: 48em) {
+        #masthead .site-branding .site-description {
+          font-size: 16px;
+          font-size: 1rem; } }
+    #masthead .site-branding #aboutme-link {
+      margin: 0 auto;
+      color: #F60022;
+      font-family: PuristaMedium;
+      font-size: 14px;
+      letter-spacing: 5px;
+      display: block;
+      width: 187px;
+      height: 52px;
+      text-decoration: none;
+      background: url("../images/what-i-do-white.png") no-repeat 0 bottom;
+      transition: color 0.5s; }
+      #masthead .site-branding #aboutme-link img {
+        transition: opacity 0.5s; }
+      #masthead .site-branding #aboutme-link:hover {
+        color: white; }
+        #masthead .site-branding #aboutme-link:hover img {
+          opacity: 0; }
 
 /*--------------------------------------------------------------
-    6.2 Navigation
+    7.2 Navigation
     --------------------------------------------------------------*/
 /* Flexnav Base Styles */
 .flexnav {
@@ -974,7 +1035,7 @@ body {
     white-space: nowrap; }
     .flexnav li a:hover {
       background: #fff;
-      color: #f00 !important; }
+      color: #656565 !important; }
     .flexnav li a:focus {
       background: #fff; }
   .flexnav li ul {
@@ -1262,10 +1323,10 @@ nav.post-navigation {
         margin-right: 0; } }
 
 /*--------------------------------------------------------------
-    6.3 Content
+    7.3 Content
     --------------------------------------------------------------*/
 .sticky {
-  background: #ededed; }
+  background: #656565; }
 
 .gallery-caption {
   list-style: none; }
@@ -1323,7 +1384,7 @@ nav.post-navigation {
 #breadcrumbs {
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: Tinos;
   padding: 20px 0 20px 50px; }
 
 /* =Media
@@ -1337,7 +1398,7 @@ nav.post-navigation {
   padding: 0; }
 
 .wp-caption {
-  border: 1px solid #ededed;
+  border: 1px solid #656565;
   clear: both;
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -1395,7 +1456,7 @@ object {
     text-decoration: none; }
 
 /*--------------------------------------------------------------
-    6.4 Page Templates
+    7.4 Page Templates
     --------------------------------------------------------------*/
 .page-template-page-templatestemplate-left-col-php h1.entry-title {
   margin: 0;
@@ -1513,8 +1574,80 @@ object {
   margin: 0;
   padding: 0; }
 
+.section {
+  padding-top: 20px; }
+
+#aboutme {
+  font-size: 17px;
+  color: #656565;
+  text-align: center; }
+  @media screen and (min-width: 48em) {
+    #aboutme {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto; }
+      #aboutme::after {
+        clear: both;
+        content: "";
+        display: table; } }
+
+#mywork {
+  font-size: 17px;
+  color: #656565;
+  text-align: center; }
+  @media screen and (min-width: 48em) {
+    #mywork {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      #mywork::after {
+        clear: both;
+        content: "";
+        display: table; } }
+
+#aboutme-link, #mywork-link {
+  margin: 60px auto 0 auto;
+  color: #656565;
+  font-family: PuristaMedium;
+  font-size: 14px;
+  letter-spacing: 5px;
+  display: block;
+  width: 187px;
+  height: 52px;
+  text-decoration: none;
+  background: url("../images/what-i-do-red.png") no-repeat 0 bottom;
+  transition: color 0.5s; }
+  #aboutme-link img, #mywork-link img {
+    transition: opacity 0.5s; }
+  #aboutme-link:hover, #mywork-link:hover {
+    color: #F60022; }
+    #aboutme-link:hover img, #mywork-link:hover img {
+      opacity: 0; }
+
+#resume-link {
+  font-family: PuristaMedium;
+  font-size: 14px;
+  text-decoration: none; }
+  #resume-link span {
+    display: block; }
+
+.entry-content::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.entry-content .mywork-columns {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%; }
+  .entry-content .mywork-columns:last-child {
+    margin-right: 0; }
+  .entry-content .mywork-columns h4 {
+    margin-bottom: 60px; }
+
 /*--------------------------------------------------------------
-    6.5 Sidebar
+    7.5 Sidebar
     --------------------------------------------------------------*/
 /* =Asides
 ----------------------------------------------- */
@@ -1534,41 +1667,67 @@ object {
   display: none; }
 
 /*--------------------------------------------------------------
-    6.6 Footer
+    7.6 Footer
     --------------------------------------------------------------*/
 footer {
   float: right ;
+  background-color: #F60022;
   margin: 0 auto;
   padding: 0 40px;
   width: 100%; }
   footer .site-info {
-    margin: auto;
-    width: 100%; }
-  footer .footer-left {
-    float: left;
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px; }
+    footer .site-info::after {
+      clear: both;
+      content: "";
+      display: table; }
+    footer .site-info h4 {
+      font-family: PuristaBold;
+      margin-bottom: 75px; }
+    footer .site-info .footer-left, footer .site-info .footer-right {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 48.93617%;
+      font-family: Tinos;
+      font-size: 17px;
+      color: white;
+      letter-spacing: 0; }
+      footer .site-info .footer-left:last-child, footer .site-info .footer-right:last-child {
+        margin-right: 0; }
+      footer .site-info .footer-left img, footer .site-info .footer-right img {
+        margin: 0 45% 10px 45%; }
+    footer .site-info .footer-right img {
+      margin-top: -13px; }
+  footer #footer-link {
+    margin: 60px auto 0 auto;
+    color: white;
+    font-family: PuristaMedium;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-align: center;
     display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    padding: 10px;
-    text-align: right; }
-    footer .footer-left:last-child {
-      margin-right: 0; }
-  footer .footer-right {
-    float: left;
-    display: block;
-    margin-right: 2.12766%;
-    width: 48.93617%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    padding: 10px;
-    text-align: left; }
-    footer .footer-right:last-child {
-      margin-right: 0; }
+    width: 187px;
+    height: 52px;
+    text-decoration: none;
+    background: url("../images/what-i-do-up-grey.png") no-repeat;
+    transition: color 0.5s; }
+    footer #footer-link img {
+      transition: opacity 0.5s; }
+    footer #footer-link:hover {
+      color: #656565; }
+      footer #footer-link:hover img {
+        opacity: 0; }
 
 /*--------------------------------------------------------------
-    6.7 Accessibility
+    7.7 Accessibility
     --------------------------------------------------------------*/
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -1581,7 +1740,7 @@ footer {
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto;
-    color: #f00;
+    color: #656565;
     display: block;
     font-size: 14px;
     font-weight: bold;

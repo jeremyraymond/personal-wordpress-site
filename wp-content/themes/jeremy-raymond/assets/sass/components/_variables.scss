@@ -1,11 +1,23 @@
+/* =Font-face declarations
+-------------------------------------------------------------- */
+@include font-face(PuristaMedium, "../fonts/purista_medium", $file-formats: ttf);
+@include font-face(PuristaLight, "../fonts/purista_light", $file-formats: ttf);
+@include font-face(PuristaBold, "../fonts/purista_bold", $file-formats: ttf);
+@include font-face(Tinos, "../fonts/Tinos-Regular", $file-formats: ttf);
+
+
 /* =Variables
 -------------------------------------------------------------- */
 $base-font-size: 20px;
 $base-body-color: #fff;
 $icon-color: #f00;
 $primary-font-color: #000;
-$grey: #ededed;
-$link-color: #f00;
-$title: $helvetica;
-$content: $georgia;
+$grey: #656565;
+$link-color: $grey;
+$title: PuristaMedium;
+$title-light: PuristaLight;
+$title-bold: PuristaBold;
+$content: Tinos;
 $shadow: rgba(0, 0, 0, .6);
+
+$red: #F60022;

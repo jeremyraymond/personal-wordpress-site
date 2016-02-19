@@ -24,14 +24,12 @@ html {
 	  unicode-bidi: embed;
 	}
 }
-#page {
-	 @include outer-container;
 
-}
 .wrap {}
 
 #main {
 	padding: 0 50px;
+	@include outer-container;
 }
 
 #primary {
@@ -55,6 +53,7 @@ html {
 		}
 	}
 }
+
 #secondary {
 	@include media($sm) {
 		@include span-columns( 2 );

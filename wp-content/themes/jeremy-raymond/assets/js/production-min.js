@@ -1,0 +1,1 @@
+!function(i){function n(n,e){n.each(function(){if(e){var n=i(this).css("height");i(this).css("min-height",n)}i(this).css("height",window.innerHeight+"px")})}i(document).ready(function(i){var e=i(".section");n(e,!0),i(window).resize(function(){n(e,!1)}),i(".nav-link").smoothScroll({speed:1e3})})}(jQuery);

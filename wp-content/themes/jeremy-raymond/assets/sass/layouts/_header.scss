@@ -1,39 +1,79 @@
-.site-branding {
-    text-align: center;
-    .site-title {
-        font-family: $title;
-        padding: 40px;
+#masthead {
+    background: black;
+    .site-branding {
+        text-align: center;
+        background: black url('../images/glasses.png') no-repeat center 70px;
+        background-size: contain;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        .site-title {
+            font-family: $title;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 21px;
 
-        @include media($sm) {
-            @include fontSize(35px);
-        }
-        @include media($smbg) {
-            @include fontSize(55px);
-        }
-        @include media($md) {
-            @include fontSize(75px);
+            @include media($sm) {
+                padding-top: 20px;
+                background: none;
+            }
+            @include media($smbg) {
+                padding-top: 40px;
+
+            }
+            @include media($md) {
+                @include fontSize(36px);
+                padding-top: 19%;
+                background: url('../images/lines.png') no-repeat center 75%;
+            }
+
+            a, a:visited {
+                line-height: 1;
+            }
+
         }
 
-        a,a:visited {
-            line-height: 1;
-        }
+        .site-description {
+            padding: 25px 0 100px 0;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 8px;
 
-    }
+            @include fontSize(12px);
 
-    .site-description {
-        padding: 25px 0;
-        @include fontSize(20px);
+            @include media($sm) {
 
-        @include media($sm) {
-            @include fontSize(15px);
+            }
+            @include media($smbg) {
+
+            }
+            @include media($md) {
+                @include fontSize(16px);
+            }
+            font-family: $title-light;
         }
-        @include media($smbg) {
-            @include fontSize(18px);
+        #aboutme-link {
+            margin: 0 auto;
+            color: #F60022;
+            font-family: $title;
+            font-size: 14px;
+            letter-spacing: 5px;
+            display: block;
+            width: 187px;
+            height: 52px;
+            text-decoration: none;
+            background: url('../images/what-i-do-white.png') no-repeat 0 bottom;
+            @include transition( color 0.5s );
+            img {
+                @include transition( opacity 0.5s );
+            }
+            &:hover {
+                color: white;
+                img {
+                    opacity: 0;
+                }
+
+            }
         }
-        @include media($md) {
-            @include fontSize(25px);
-        }
-        font-family: $content;
-        font-style: italic;
     }
 }
