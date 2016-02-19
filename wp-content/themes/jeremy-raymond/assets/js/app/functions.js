@@ -13,7 +13,15 @@
                 var minHeight = $(this).css('height');
                 $(this).css('min-height', minHeight);
             }
-            $(this).css('height', window.innerHeight + "px");
+            var heightOfContent = $('.sub-section').outerHeight(true);
+            console.log("child: " + heightOfContent);
+            if(heightOfContent > window.innerHeight) {
+                $(this).css('height', heightOfContent + "px");
+                console.log("if");
+            } else {
+                console.log("else");
+                $(this).css('height', window.innerHeight + "px");
+            }
         });
     }
 
