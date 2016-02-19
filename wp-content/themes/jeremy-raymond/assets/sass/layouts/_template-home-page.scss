@@ -1,0 +1,49 @@
+.section {
+  padding-top: 20px;
+}
+#aboutme {
+  @include content-font();
+
+  @include media($md) {
+    @include outer-container(70%);
+  }
+}
+#mywork {
+  @include content-font();
+
+  @include media($md) {
+    @include outer-container(90%);
+  }
+}
+#aboutme-link, #mywork-link {
+  margin: 100px auto 0 auto;
+  color: #656565;
+  font-family: $title;
+  font-size: 14px;
+  letter-spacing: 5px;
+  display: block;
+  width: 187px;
+  height: 52px;
+  text-decoration: none;
+  background: url('../images/what-i-do-red.png') no-repeat 0 bottom;
+  @include transition( color 0.5s );
+  img {
+    @include transition( opacity 0.5s );
+  }
+  &:hover {
+    color: #F60022;
+    img {
+      opacity: 0;
+    }
+
+  }
+}
+#resume-link {
+  font-family: $title;
+  font-size: 14px;
+  text-decoration: none;
+
+  span {
+    display: block;
+  }
+}

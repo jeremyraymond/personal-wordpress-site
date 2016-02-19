@@ -53,6 +53,7 @@ html {
 		}
 	}
 }
+
 #secondary {
 	@include media($sm) {
 		@include span-columns( 2 );

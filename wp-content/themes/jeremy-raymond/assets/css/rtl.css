@@ -571,7 +571,10 @@ table {
   border-spacing: 0; }
 
 /*--------------------------------------------------------------
-4.0 Typography
+4.0 Custom Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.0 Typography
 --------------------------------------------------------------*/
 /* =Typographical Mixins/Functions
 -------------------------------------------------------------- */
@@ -704,7 +707,7 @@ ol:nth-child(n+2) {
   font-family: Tinos; }
 
 /*--------------------------------------------------------------
-5.0 Components/Add-ons
+6.0 Components/Add-ons
 --------------------------------------------------------------*/
 #submit {
   background: #000;
@@ -836,7 +839,7 @@ input#s {
   display: block; }
 
 /*--------------------------------------------------------------
-6.0 Layout and Structure
+7.0 Layout and Structure
 --------------------------------------------------------------*/
 /* =Structure/Scaffolding
 -------------------------------------------------------------- */
@@ -912,7 +915,7 @@ body {
         margin-right: 0; } }
 
 /*--------------------------------------------------------------
-    6.1 Layout and Structure
+    7.1 Layout and Structure
     --------------------------------------------------------------*/
 #masthead {
   background: black; }
@@ -975,7 +978,7 @@ body {
           opacity: 0; }
 
 /*--------------------------------------------------------------
-    6.2 Navigation
+    7.2 Navigation
     --------------------------------------------------------------*/
 /* Flexnav Base Styles */
 .flexnav {
@@ -1302,7 +1305,7 @@ nav.post-navigation {
         margin-right: 0; } }
 
 /*--------------------------------------------------------------
-    6.3 Content
+    7.3 Content
     --------------------------------------------------------------*/
 .sticky {
   background: #ededed; }
@@ -1435,7 +1438,7 @@ object {
     text-decoration: none; }
 
 /*--------------------------------------------------------------
-    6.4 Page Templates
+    7.4 Page Templates
     --------------------------------------------------------------*/
 .page-template-page-templatestemplate-left-col-php h1.entry-title {
   margin: 0;
@@ -1553,8 +1556,65 @@ object {
   margin: 0;
   padding: 0; }
 
+.section {
+  padding-top: 20px; }
+
+#aboutme {
+  font-size: 17px;
+  color: #656565;
+  text-align: center; }
+  @media screen and (min-width: 48em) {
+    #aboutme {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto; }
+      #aboutme::after {
+        clear: both;
+        content: "";
+        display: table; } }
+
+#mywork {
+  font-size: 17px;
+  color: #656565;
+  text-align: center; }
+  @media screen and (min-width: 48em) {
+    #mywork {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto; }
+      #mywork::after {
+        clear: both;
+        content: "";
+        display: table; } }
+
+#aboutme-link, #mywork-link {
+  margin: 100px auto 0 auto;
+  color: #656565;
+  font-family: PuristaMedium;
+  font-size: 14px;
+  letter-spacing: 5px;
+  display: block;
+  width: 187px;
+  height: 52px;
+  text-decoration: none;
+  background: url("../images/what-i-do-red.png") no-repeat 0 bottom;
+  transition: color 0.5s; }
+  #aboutme-link img, #mywork-link img {
+    transition: opacity 0.5s; }
+  #aboutme-link:hover, #mywork-link:hover {
+    color: #F60022; }
+    #aboutme-link:hover img, #mywork-link:hover img {
+      opacity: 0; }
+
+#resume-link {
+  font-family: PuristaMedium;
+  font-size: 14px;
+  text-decoration: none; }
+  #resume-link span {
+    display: block; }
+
 /*--------------------------------------------------------------
-    6.5 Sidebar
+    7.5 Sidebar
     --------------------------------------------------------------*/
 /* =Asides
 ----------------------------------------------- */
@@ -1574,7 +1634,7 @@ object {
   display: none; }
 
 /*--------------------------------------------------------------
-    6.6 Footer
+    7.6 Footer
     --------------------------------------------------------------*/
 footer {
   float: right ;
@@ -1608,7 +1668,7 @@ footer {
       margin-right: 0; }
 
 /*--------------------------------------------------------------
-    6.7 Accessibility
+    7.7 Accessibility
     --------------------------------------------------------------*/
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);

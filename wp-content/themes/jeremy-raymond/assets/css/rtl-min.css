@@ -164,7 +164,14 @@ nav.post-navigation{width:100%}.nav-links{width:100%}@media screen and (min-widt
 .page-template-page-templatestemplate-right-col-php #secondary:last-child{margin-right:0}
 }.page-template-page-templatestemplate-full-width-php #main,.page-template-page-templatestemplate-full-width-php #primary,.page-template-page-templatestemplate-full-width-php #secondary{width:100%;margin:0;padding:0}
 .page-template-page-templatestemplate-landing-page-php #main,.page-template-page-templatestemplate-landing-page-php #primary,.page-template-page-templatestemplate-landing-page-php #secondary{width:100%;margin:0;padding:0}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+.section{padding-top:20px}#aboutme{font-size:17px;color:#656565;text-align:center}
+@media screen and (min-width:48em){#aboutme{max-width:70%;margin-left:auto;margin-right:auto}
+#aboutme::after{clear:both;content:"";display:table}}#mywork{font-size:17px;color:#656565;text-align:center}
+@media screen and (min-width:48em){#mywork{max-width:90%;margin-left:auto;margin-right:auto}
+#mywork::after{clear:both;content:"";display:table}}#aboutme-link,#mywork-link{margin:100px auto 0 auto;color:#656565;font-family:PuristaMedium;font-size:14px;letter-spacing:5px;display:block;width:187px;height:52px;text-decoration:none;background:url("../images/what-i-do-red.png") no-repeat 0 bottom;transition:color .5s}
+#aboutme-link img,#mywork-link img{transition:opacity .5s}#aboutme-link:hover,#mywork-link:hover{color:#f60022}
+#aboutme-link:hover img,#mywork-link:hover img{opacity:0}#resume-link{font-family:PuristaMedium;font-size:14px;text-decoration:none}
+#resume-link span{display:block}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .widget{margin:0 0 1.5em}.widget select{max-width:100%}.widget_search .search-submit{display:none}
 footer{float:right;margin:0 auto;padding:0 40px;width:100%}footer .site-info{margin:auto;width:100%}
 footer .footer-left{float:left;display:block;margin-right:2.12766%;width:48.93617%;margin-bottom:40px;margin-top:30px;padding:10px;text-align:right}

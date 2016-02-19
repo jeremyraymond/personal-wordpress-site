@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area post-<?php the_ID(); ?>">
+<div class="content-area post-<?php the_ID(); ?>">
 
     <?php while ( have_posts() ) : the_post(); ?>
 
