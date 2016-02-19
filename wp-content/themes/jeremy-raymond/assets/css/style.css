@@ -1625,7 +1625,8 @@ object {
 #resume-link {
   font-family: PuristaMedium;
   font-size: 14px;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #F60022; }
   #resume-link span {
     display: block; }
 
