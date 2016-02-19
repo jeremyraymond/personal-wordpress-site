@@ -1627,7 +1627,8 @@ object {
 #resume-link {
   font-family: PuristaMedium;
   font-size: 14px;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #F60022; }
   #resume-link span {
     display: block; }
 
@@ -1636,15 +1637,26 @@ object {
   content: "";
   display: table; }
 
-.entry-content .mywork-columns {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 48.93617%; }
-  .entry-content .mywork-columns:last-child {
-    margin-right: 0; }
-  .entry-content .mywork-columns h4 {
-    margin-bottom: 60px; }
+@media screen and (min-width: 0) {
+  .entry-content .mywork-columns {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%; }
+    .entry-content .mywork-columns:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48em) {
+  .entry-content .mywork-columns {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 47.82609%; }
+    .entry-content .mywork-columns:last-child {
+      margin-right: 0; } }
+
+.entry-content .mywork-columns h4 {
+  margin-bottom: 60px; }
 
 /*--------------------------------------------------------------
     7.5 Sidebar
@@ -1692,22 +1704,33 @@ footer {
       font-family: PuristaBold;
       margin-bottom: 75px; }
     footer .site-info .footer-left, footer .site-info .footer-right {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 48.93617%;
       font-family: Tinos;
       font-size: 17px;
       color: white;
-      letter-spacing: 0; }
-      footer .site-info .footer-left:last-child, footer .site-info .footer-right:last-child {
-        margin-right: 0; }
+      letter-spacing: 0;
+      margin-bottom: 30px; }
+      @media screen and (min-width: 0) {
+        footer .site-info .footer-left, footer .site-info .footer-right {
+          float: left;
+          display: block;
+          margin-right: 14.28571%;
+          width: 100%; }
+          footer .site-info .footer-left:last-child, footer .site-info .footer-right:last-child {
+            margin-right: 0; } }
+      @media screen and (min-width: 48em) {
+        footer .site-info .footer-left, footer .site-info .footer-right {
+          float: left;
+          display: block;
+          margin-right: 4.34783%;
+          width: 47.82609%; }
+          footer .site-info .footer-left:last-child, footer .site-info .footer-right:last-child {
+            margin-right: 0; } }
       footer .site-info .footer-left img, footer .site-info .footer-right img {
         margin: 0 45% 10px 45%; }
     footer .site-info .footer-right img {
       margin-top: -13px; }
   footer #footer-link {
-    margin: 60px auto 0 auto;
+    margin: 0 auto;
     color: white;
     font-family: PuristaMedium;
     font-size: 14px;

@@ -7,13 +7,18 @@
                         elements so that the section can never be smaller than its contents even if the
                         screen is made smaller.
      */
-    function resizeSections(section, isFirstTime) {
+    function resizeSections(section) {
         section.each(function() {
-            if(isFirstTime) {
-                var minHeight = $(this).css('height');
-                $(this).css('min-height', minHeight);
+
+            var heightOfContent = $('.sub-section').outerHeight(true);
+            console.log("child: " + heightOfContent);
+            if(heightOfContent > window.innerHeight) {
+                $(this).css('height', heightOfContent + "px");
+                console.log("if");
+            } else {
+                console.log("else");
+                $(this).css('height', window.innerHeight + "px");
             }
-            $(this).css('height', window.innerHeight + "px");
         });
     }
 
@@ -21,10 +26,10 @@
         // get the sections to be resized
         var section = $('.section');
         // call function once on page load and pass true so the min-height is set
-        resizeSections(section, true);
+        resizeSections(section);
         // on every window resize, resize the section. Pass false because the min-height is set in stone.
         $(window).resize( function(){
-            resizeSections(section, false);
+            resizeSections(section);
         });
 
         // add smoothscroll to all the nav links

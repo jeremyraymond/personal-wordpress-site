@@ -173,19 +173,23 @@ nav.post-navigation{width:100%}.nav-links{width:100%}@media screen and (min-widt
 @media screen and (min-width:48em){#mywork{max-width:90%;margin-left:auto;margin-right:auto}
 #mywork::after{clear:both;content:"";display:table}}#aboutme-link,#mywork-link{margin:60px auto 0 auto;color:#656565;font-family:PuristaMedium;font-size:14px;letter-spacing:5px;display:block;width:187px;height:52px;text-decoration:none;background:url("../images/what-i-do-red.png") no-repeat 0 bottom;transition:color .5s}
 #aboutme-link img,#mywork-link img{transition:opacity .5s}#aboutme-link:hover,#mywork-link:hover{color:#f60022}
-#aboutme-link:hover img,#mywork-link:hover img{opacity:0}#resume-link{font-family:PuristaMedium;font-size:14px;text-decoration:none}
+#aboutme-link:hover img,#mywork-link:hover img{opacity:0}#resume-link{font-family:PuristaMedium;font-size:14px;text-decoration:none;color:#f60022}
 #resume-link span{display:block}.entry-content::after{clear:both;content:"";display:table}
-.entry-content .mywork-columns{float:left;display:block;margin-right:2.12766%;width:48.93617%}
-.entry-content .mywork-columns:last-child{margin-right:0}.entry-content .mywork-columns h4{margin-bottom:60px}
+@media screen and (min-width:0){.entry-content .mywork-columns{float:left;display:block;margin-right:14.28571%;width:100%}
+.entry-content .mywork-columns:last-child{margin-right:0}}@media screen and (min-width:48em){.entry-content .mywork-columns{float:left;display:block;margin-right:4.34783%;width:47.82609%}
+.entry-content .mywork-columns:last-child{margin-right:0}}.entry-content .mywork-columns h4{margin-bottom:60px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .widget{margin:0 0 1.5em}.widget select{max-width:100%}.widget_search .search-submit{display:none}
 footer{float:right;background-color:#f60022;margin:0 auto;padding:0 40px;width:100%}
 footer .site-info{max-width:55%;margin-left:auto;margin-right:auto;margin-top:150px;margin-bottom:150px;text-align:center;color:white;letter-spacing:5px}
 footer .site-info::after{clear:both;content:"";display:table}
-footer .site-info h4{font-family:PuristaBold;margin-bottom:75px}footer .site-info .footer-left,footer .site-info .footer-right{float:left;display:block;margin-right:2.12766%;width:48.93617%;font-family:Tinos;font-size:17px;color:white;letter-spacing:0}
+footer .site-info h4{font-family:PuristaBold;margin-bottom:75px}footer .site-info .footer-left,footer .site-info .footer-right{font-family:Tinos;font-size:17px;color:white;letter-spacing:0;margin-bottom:30px}
+@media screen and (min-width:0){footer .site-info .footer-left,footer .site-info .footer-right{float:left;display:block;margin-right:14.28571%;width:100%}
 footer .site-info .footer-left:last-child,footer .site-info .footer-right:last-child{margin-right:0}
-footer .site-info .footer-left img,footer .site-info .footer-right img{margin:0 45% 10px 45%}
-footer .site-info .footer-right img{margin-top:-13px}footer #footer-link{margin:60px auto 0 auto;color:white;font-family:PuristaMedium;font-size:14px;letter-spacing:5px;text-align:center;display:block;width:187px;height:52px;text-decoration:none;background:url("../images/what-i-do-up-grey.png") no-repeat;transition:color .5s}
+}@media screen and (min-width:48em){footer .site-info .footer-left,footer .site-info .footer-right{float:left;display:block;margin-right:4.34783%;width:47.82609%}
+footer .site-info .footer-left:last-child,footer .site-info .footer-right:last-child{margin-right:0}
+}footer .site-info .footer-left img,footer .site-info .footer-right img{margin:0 45% 10px 45%}
+footer .site-info .footer-right img{margin-top:-13px}footer #footer-link{margin:0 auto;color:white;font-family:PuristaMedium;font-size:14px;letter-spacing:5px;text-align:center;display:block;width:187px;height:52px;text-decoration:none;background:url("../images/what-i-do-up-grey.png") no-repeat;transition:color .5s}
 footer #footer-link img{transition:opacity .5s}footer #footer-link:hover{color:#656565}
 footer #footer-link:hover img{opacity:0}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute;width:1px}
 .screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#ccc;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#656565;display:block;font-size:14px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
