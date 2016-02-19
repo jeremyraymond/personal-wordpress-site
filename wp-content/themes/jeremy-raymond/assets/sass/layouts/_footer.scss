@@ -18,11 +18,18 @@ footer {
         }
 
         .footer-left, .footer-right {
-            @include span-columns(6);
             font-family: $content;
             font-size: 17px;
             color: white;
             letter-spacing: 0;
+            margin-bottom: 30px;
+
+            @include media($sm) {
+                @include span-columns(2);
+            }
+            @include media($md) {
+                @include span-columns(3);
+            }
 
             img {
                 margin: 0 45% 10px 45%;
@@ -35,7 +42,7 @@ footer {
         }
     }
     #footer-link {
-        margin: 60px auto 0 auto;
+        margin: 0 auto;
         color: white;
         font-family: $title;
         font-size: 14px;
