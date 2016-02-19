@@ -1635,15 +1635,26 @@ object {
   content: "";
   display: table; }
 
-.entry-content .mywork-columns {
-  float: left;
-  display: block;
-  margin-right: 2.12766%;
-  width: 48.93617%; }
-  .entry-content .mywork-columns:last-child {
-    margin-right: 0; }
-  .entry-content .mywork-columns h4 {
-    margin-bottom: 60px; }
+@media screen and (min-width: 0) {
+  .entry-content .mywork-columns {
+    float: left;
+    display: block;
+    margin-right: 14.28571%;
+    width: 100%; }
+    .entry-content .mywork-columns:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 48em) {
+  .entry-content .mywork-columns {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 47.82609%; }
+    .entry-content .mywork-columns:last-child {
+      margin-right: 0; } }
+
+.entry-content .mywork-columns h4 {
+  margin-bottom: 60px; }
 
 /*--------------------------------------------------------------
     7.5 Sidebar

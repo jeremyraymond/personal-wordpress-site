@@ -50,7 +50,15 @@
 .entry-content {
   @include clearfix;
   .mywork-columns {
-    @include span-columns(6);
+
+
+    @include media($sm) {
+      @include span-columns(2);
+    }
+    @include media($md) {
+      @include span-columns(3);
+    }
+
 
     h4 {
       margin-bottom: 60px;

@@ -174,8 +174,9 @@ nav.post-navigation{width:100%}.nav-links{width:100%}@media screen and (min-widt
 #aboutme-link img,#mywork-link img{transition:opacity .5s}#aboutme-link:hover,#mywork-link:hover{color:#f60022}
 #aboutme-link:hover img,#mywork-link:hover img{opacity:0}#resume-link{font-family:PuristaMedium;font-size:14px;text-decoration:none;color:#f60022}
 #resume-link span{display:block}.entry-content::after{clear:both;content:"";display:table}
-.entry-content .mywork-columns{float:left;display:block;margin-right:2.12766%;width:48.93617%}
-.entry-content .mywork-columns:last-child{margin-right:0}.entry-content .mywork-columns h4{margin-bottom:60px}
+@media screen and (min-width:0){.entry-content .mywork-columns{float:left;display:block;margin-right:14.28571%;width:100%}
+.entry-content .mywork-columns:last-child{margin-right:0}}@media screen and (min-width:48em){.entry-content .mywork-columns{float:left;display:block;margin-right:4.34783%;width:47.82609%}
+.entry-content .mywork-columns:last-child{margin-right:0}}.entry-content .mywork-columns h4{margin-bottom:60px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .widget{margin:0 0 1.5em}.widget select{max-width:100%}.widget_search .search-submit{display:none}
 footer{float:left;background-color:#f60022;margin:0 auto;padding:0 40px;width:100%}
