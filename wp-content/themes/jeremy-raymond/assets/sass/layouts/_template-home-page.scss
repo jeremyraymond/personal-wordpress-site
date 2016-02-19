@@ -16,8 +16,8 @@
   }
 }
 #aboutme-link, #mywork-link {
-  margin: 100px auto 0 auto;
-  color: #656565;
+  margin: 60px auto 0 auto;
+  color: $grey;
   font-family: $title;
   font-size: 14px;
   letter-spacing: 5px;
@@ -31,11 +31,10 @@
     @include transition( opacity 0.5s );
   }
   &:hover {
-    color: #F60022;
+    color: $red;
     img {
       opacity: 0;
     }
-
   }
 }
 #resume-link {
@@ -45,5 +44,15 @@
 
   span {
     display: block;
+  }
+}
+.entry-content {
+  @include clearfix;
+  .mywork-columns {
+    @include span-columns(6);
+
+    h4 {
+      margin-bottom: 20px;
+    }
   }
 }

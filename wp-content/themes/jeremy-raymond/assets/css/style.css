@@ -614,36 +614,43 @@ h1 {
   font-size: 75px;
   font-size: 4.6875rem;
   color: #000;
-  font-family: PuristaMedium; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h2 {
   font-size: 50px;
   font-size: 3.125rem;
-  font-family: PuristaMedium; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h3 {
   font-size: 35px;
   font-size: 2.1875rem;
-  font-family: PuristaMedium; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-family: PuristaMedium; }
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-family: PuristaLight;
+  font-weight: normal;
+  letter-spacing: 10px; }
 
 h5 {
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: PuristaMedium; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 h6 {
   font-size: 18px;
   font-size: 1.125rem;
-  font-family: PuristaMedium; }
+  font-family: PuristaMedium;
+  font-weight: normal; }
 
 blockquote {
   background-color: #f7f7f7;
-  border-left: solid 5px #f00;
+  border-left: solid 5px #656565;
   font-style: italic;
   padding: 20px; }
 
@@ -660,7 +667,7 @@ a, a:visited {
   text-decoration: none; }
   a:hover, a:visited:hover {
     transition: all 200ms ease-in-out;
-    color: #f00;
+    color: #656565;
     text-decoration: underline; }
 
 .entry-meta a, .entry-meta a:visited,
@@ -669,15 +676,15 @@ a, a:visited {
 #secondary a,
 #secondary a:visited {
   transition: all 200ms ease-in-out;
-  color: #f00;
-  text-decoration: none; }
+  color: #656565;
+  text-decoration: underline; }
   .entry-meta a:hover, .entry-meta a:visited:hover,
   .entry-content a:hover,
   .entry-content a:visited:hover,
   #secondary a:hover,
   #secondary a:visited:hover {
     transition: all 200ms ease-in-out;
-    color: #f00;
+    color: #F60022;
     text-decoration: underline; }
 
 ul:nth-child(n+2) {
@@ -1015,7 +1022,7 @@ body {
     white-space: nowrap; }
     .flexnav li a:hover {
       background: #fff;
-      color: #f00 !important; }
+      color: #656565 !important; }
     .flexnav li a:focus {
       background: #fff; }
   .flexnav li ul {
@@ -1306,7 +1313,7 @@ nav.post-navigation {
     7.3 Content
     --------------------------------------------------------------*/
 .sticky {
-  background: #ededed; }
+  background: #656565; }
 
 .gallery-caption {
   list-style: none; }
@@ -1378,7 +1385,7 @@ nav.post-navigation {
   padding: 0; }
 
 .wp-caption {
-  border: 1px solid #ededed;
+  border: 1px solid #656565;
   clear: both;
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -1586,7 +1593,7 @@ object {
         display: table; } }
 
 #aboutme-link, #mywork-link {
-  margin: 100px auto 0 auto;
+  margin: 60px auto 0 auto;
   color: #656565;
   font-family: PuristaMedium;
   font-size: 14px;
@@ -1610,6 +1617,21 @@ object {
   text-decoration: none; }
   #resume-link span {
     display: block; }
+
+.entry-content::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.entry-content .mywork-columns {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%; }
+  .entry-content .mywork-columns:last-child {
+    margin-right: 0; }
+  .entry-content .mywork-columns h4 {
+    margin-bottom: 20px; }
 
 /*--------------------------------------------------------------
     7.5 Sidebar
@@ -1679,7 +1701,7 @@ footer {
     border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto;
-    color: #f00;
+    color: #656565;
     display: block;
     font-size: 14px;
     font-weight: bold;

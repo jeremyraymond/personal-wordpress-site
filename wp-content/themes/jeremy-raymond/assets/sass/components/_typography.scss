@@ -61,26 +61,33 @@ h1 {
     @include fontSize(75px);
     color: $primary-font-color;
     font-family: $title;
+    font-weight: normal;
 }
 h2 {
     @include fontSize(50px);
     font-family: $title;
+    font-weight: normal;
 }
 h3 {
     @include fontSize(35px);
     font-family: $title;
+    font-weight: normal;
 }
 h4 {
-    @include fontSize(24px);
-    font-family: $title;
+    @include fontSize(25px);
+    font-family: $title-light;
+    font-weight: normal;
+    letter-spacing: 10px;
 }
 h5 {
     @include fontSize(20px);
     font-family: $title;
+    font-weight: normal;
 }
 h6 {
     @include fontSize(18px);
     font-family: $title;
+    font-weight: normal;
 }
 blockquote {
     background-color: darken($base-body-color, 3%);
@@ -113,11 +120,11 @@ a, a:visited {
     a, a:visited {
         @include transition (all 200ms ease-in-out);
         color: $link-color;
-        text-decoration: none;
+        text-decoration: underline;
 
         &:hover {
             @include transition (all 200ms ease-in-out);
-            color: $link-color;
+            color: $red;
             text-decoration: underline;
         }
     }
