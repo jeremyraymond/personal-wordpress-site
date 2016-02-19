@@ -1,8 +1,8 @@
 /* =Font-face declarations
 -------------------------------------------------------------- */
-@include font-face(PuristaMedium, "../fonts/purista_medium");
-@include font-face(PuristaLight, "../fonts/purista_light");
-@include font-face(Tinos, "..fonts/Tinos-Regular");
+@include font-face(PuristaMedium, "../fonts/purista_medium", $file-formats: ttf);
+@include font-face(PuristaLight, "../fonts/purista_light", $file-formats: ttf);
+@include font-face(Tinos, "../fonts/Tinos-Regular", $file-formats: ttf);
 
 
 /* =Variables

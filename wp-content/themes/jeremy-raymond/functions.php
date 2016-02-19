@@ -179,7 +179,7 @@ if ( ! function_exists( 'some_like_it_neat_scripts' ) ) :
 		wp_register_script( 'hoverintent-js', get_template_directory_uri() . '/assets/js/vendor/hoverintent/jquery.hoverIntent.js', array( 'jquery' ), '1.0.0', true );
 		wp_enqueue_script( 'hoverintent-js' );
 
-		wp_register_script( 'smooth-scroll-js', get_template_directory_uri() . '/assets/js/vendor/jquery.smooth-scroll.min.js', array( 'jquery' ), '1.0.0', true );
+		wp_register_script( 'smooth-scroll-js', get_template_directory_uri() . '/node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js', array( 'jquery' ), '1.0.0', true );
 		wp_enqueue_script( 'smooth-scroll-js' );
 
 		wp_register_script( 'functions-js', get_template_directory_uri() . '/assets/js/app/functions.js', array( 'jquery' ), '1.0.0', true );

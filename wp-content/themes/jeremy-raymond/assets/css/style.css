@@ -211,19 +211,19 @@ html {
   font-family: PuristaMedium;
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/purista_medium.eot?#iefix") format("embedded-opentype"), url("../fonts/purista_medium.woff2") format("woff2"), url("../fonts/purista_medium.woff") format("woff"), url("../fonts/purista_medium.ttf") format("truetype"), url("../fonts/purista_medium.svg#PuristaMedium") format("svg"); }
+  src: url("../fonts/purista_medium.ttf") format("truetype"); }
 
 @font-face {
   font-family: PuristaLight;
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/purista_light.eot?#iefix") format("embedded-opentype"), url("../fonts/purista_light.woff2") format("woff2"), url("../fonts/purista_light.woff") format("woff"), url("../fonts/purista_light.ttf") format("truetype"), url("../fonts/purista_light.svg#PuristaLight") format("svg"); }
+  src: url("../fonts/purista_light.ttf") format("truetype"); }
 
 @font-face {
   font-family: Tinos;
   font-style: normal;
   font-weight: normal;
-  src: url("..fonts/Tinos-Regular.eot?#iefix") format("embedded-opentype"), url("..fonts/Tinos-Regular.woff2") format("woff2"), url("..fonts/Tinos-Regular.woff") format("woff"), url("..fonts/Tinos-Regular.ttf") format("truetype"), url("..fonts/Tinos-Regular.svg#Tinos") format("svg"); }
+  src: url("../fonts/Tinos-Regular.ttf") format("truetype"); }
 
 /* =Variables
 -------------------------------------------------------------- */
@@ -953,7 +953,7 @@ body {
         #masthead .site-branding .site-description {
           font-size: 16px;
           font-size: 1rem; } }
-    #masthead .site-branding .aboutme-link {
+    #masthead .site-branding #aboutme-link {
       margin: 0 auto;
       color: #F60022;
       font-family: PuristaMedium;
@@ -965,11 +965,11 @@ body {
       text-decoration: none;
       background: url("../images/what-i-do-white.png") no-repeat 0 bottom;
       transition: color 0.5s; }
-      #masthead .site-branding .aboutme-link img {
+      #masthead .site-branding #aboutme-link img {
         transition: opacity 0.5s; }
-      #masthead .site-branding .aboutme-link:hover {
+      #masthead .site-branding #aboutme-link:hover {
         color: white; }
-        #masthead .site-branding .aboutme-link:hover img {
+        #masthead .site-branding #aboutme-link:hover img {
           opacity: 0; }
 
 /*--------------------------------------------------------------

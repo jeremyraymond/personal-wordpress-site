@@ -27,7 +27,7 @@
 		<section class="site-branding">
 			<div class="site-title"><?php bloginfo( 'name' ); ?></div>
 			<div class="site-description"><?php bloginfo( 'description' ); ?></div>
-			<a class="aboutme-link" href="#aboutme">
+			<a id="aboutme-link" class="nav-link" href="#aboutme">
 				<span>WHAT I DO</span>
 				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/what-i-do-red.png">
 			</a>
