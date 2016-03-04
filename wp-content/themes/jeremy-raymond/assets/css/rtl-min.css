@@ -167,7 +167,7 @@ nav.post-navigation{width:100%}.nav-links{width:100%}@media screen and (min-widt
 .page-template-page-templatestemplate-right-col-php #secondary:last-child{margin-right:0}
 }.page-template-page-templatestemplate-full-width-php #main,.page-template-page-templatestemplate-full-width-php #primary,.page-template-page-templatestemplate-full-width-php #secondary{width:100%;margin:0;padding:0}
 .page-template-page-templatestemplate-landing-page-php #main,.page-template-page-templatestemplate-landing-page-php #primary,.page-template-page-templatestemplate-landing-page-php #secondary{width:100%;margin:0;padding:0}
-.section{padding-top:20px}#aboutme{font-size:17px;color:#656565;text-align:center}
+.sub-section{padding:20px 0 180px}#aboutme{font-size:17px;color:#656565;text-align:center}
 @media screen and (min-width:48em){#aboutme{max-width:70%;margin-left:auto;margin-right:auto}
 #aboutme::after{clear:both;content:"";display:table}}#mywork{font-size:17px;color:#656565;text-align:center}
 @media screen and (min-width:48em){#mywork{max-width:90%;margin-left:auto;margin-right:auto}
@@ -180,8 +180,7 @@ nav.post-navigation{width:100%}.nav-links{width:100%}@media screen and (min-widt
 .entry-content .mywork-columns:last-child{margin-right:0}}.entry-content .mywork-columns h4{margin-bottom:60px}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .widget{margin:0 0 1.5em}.widget select{max-width:100%}.widget_search .search-submit{display:none}
-footer{float:right;background-color:#f60022;margin:0 auto;padding:0 40px;width:100%}
-footer .site-info{max-width:55%;margin-left:auto;margin-right:auto;margin-top:150px;margin-bottom:150px;text-align:center;color:white;letter-spacing:5px}
+footer{float:right;background-color:#f60022;padding:0;width:100%}footer .site-info{max-width:55%;margin-left:auto;margin-right:auto;margin-top:150px;margin-bottom:150px;text-align:center;color:white;letter-spacing:5px}
 footer .site-info::after{clear:both;content:"";display:table}
 footer .site-info h4{font-family:PuristaBold;margin-bottom:75px}footer .site-info .footer-left,footer .site-info .footer-right{font-family:Tinos;font-size:17px;color:white;letter-spacing:0;margin-bottom:30px}
 @media screen and (min-width:0){footer .site-info .footer-left,footer .site-info .footer-right{float:left;display:block;margin-right:14.28571%;width:100%}

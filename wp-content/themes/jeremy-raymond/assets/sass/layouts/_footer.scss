@@ -1,8 +1,7 @@
 footer {
     @include float(left);
     background-color: $red;
-    margin: 0 auto;
-    padding: 0 40px;
+    padding: 0;
     width: 100%;
     .site-info {
         @include outer-container(55%);

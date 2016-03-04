@@ -1574,8 +1574,8 @@ object {
   margin: 0;
   padding: 0; }
 
-.section {
-  padding-top: 20px; }
+.sub-section {
+  padding: 20px 0 180px; }
 
 #aboutme {
   font-size: 17px;
@@ -1684,8 +1684,7 @@ object {
 footer {
   float: right ;
   background-color: #F60022;
-  margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
   width: 100%; }
   footer .site-info {
     max-width: 55%;
