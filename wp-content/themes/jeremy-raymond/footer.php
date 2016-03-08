@@ -14,15 +14,17 @@
 			<div class="sub-section">
 				<section class="site-info">
 					<h4>GET IN TOUCH</h4>
-					<div class="footer-left">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.png" />
-						<span>jeremy.r.raymond@gmail.com</span>
+					<div>
+						<div class="footer-left">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.png" />
+							<span>jeremy.r.raymond@gmail.com</span>
+						</div>
+						<div class="footer-right">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.png" />
+							<span>810&nbsp;&nbsp;624&nbsp;&nbsp;0622</span>
+						</div>
 					</div>
-					<div class="footer-right">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/phone.png" />
-						<span>810&nbsp;&nbsp;624&nbsp;&nbsp;0622</span>
-					</div>
-
+					<a class="footer-bottom" href="http://designjohn.com" target="_blank">Webside designed by John Scianna</a>
 				</section><!-- .site-info -->
 				<a id="footer-link" class="nav-link" href="#page">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/what-i-do-up-white.png">

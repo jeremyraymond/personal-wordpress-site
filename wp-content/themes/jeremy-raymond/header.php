@@ -24,14 +24,16 @@
 
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header wrap section" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-		<section class="site-branding">
-			<div class="site-title"><?php bloginfo( 'name' ); ?></div>
-			<div class="site-description"><?php bloginfo( 'description' ); ?></div>
-			<a id="aboutme-link" class="nav-link" href="#aboutme">
-				<span>WHAT I DO</span>
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/what-i-do-red.png">
-			</a>
-		</section>
+		<div class="sub-section">
+			<section class="site-branding">
+				<div class="site-title"><?php bloginfo( 'name' ); ?></div>
+				<div class="site-description"><?php bloginfo( 'description' ); ?></div>
+				<a id="aboutme-link" class="nav-link" href="#aboutme">
+					<span>WHAT I DO</span>
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/what-i-do-red.png">
+				</a>
+			</section>
+		</div>
 	</header><!-- #masthead -->
 
 	<main id="main" class="site-main wrap" role="main">

@@ -1572,8 +1572,8 @@ object {
   margin: 0;
   padding: 0; }
 
-.section {
-  padding-top: 20px; }
+.sub-section {
+  padding: 20px 0 180px; }
 
 #aboutme {
   font-size: 17px;
@@ -1682,8 +1682,7 @@ object {
 footer {
   float: left ;
   background-color: #F60022;
-  margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
   width: 100%; }
   footer .site-info {
     max-width: 55%;
@@ -1727,6 +1726,14 @@ footer {
         margin: 0 45% 10px 45%; }
     footer .site-info .footer-right img {
       margin-top: -13px; }
+    footer .site-info .footer-bottom {
+      color: white;
+      font-family: Tinos;
+      font-size: 17px;
+      letter-spacing: 0;
+      text-decoration: underline;
+      padding-top: 130px;
+      display: block; }
   footer #footer-link {
     margin: 0 auto;
     color: white;

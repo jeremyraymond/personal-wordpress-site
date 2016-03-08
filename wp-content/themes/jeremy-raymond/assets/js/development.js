@@ -8,9 +8,9 @@
                         screen is made smaller.
      */
     function resizeSections(section) {
+        var i = 0;
         section.each(function() {
-
-            var heightOfContent = $('.sub-section').outerHeight(true);
+            var heightOfContent = $(this).find('.sub-section').outerHeight(true);
             console.log("child: " + heightOfContent);
             if(heightOfContent > window.innerHeight) {
                 $(this).css('height', heightOfContent + "px");
