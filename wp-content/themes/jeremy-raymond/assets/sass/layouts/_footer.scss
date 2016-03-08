@@ -39,6 +39,15 @@ footer {
                 margin-top: -13px;
             }
         }
+        .footer-bottom {
+            color: white;
+            font-family: $content;
+            font-size: 17px;
+            letter-spacing: 0;
+            text-decoration: underline;
+            padding-top: 130px;
+            display: block;
+        }
     }
     #footer-link {
         margin: 0 auto;

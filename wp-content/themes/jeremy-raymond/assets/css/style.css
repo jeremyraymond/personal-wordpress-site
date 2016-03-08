@@ -1726,6 +1726,14 @@ footer {
         margin: 0 45% 10px 45%; }
     footer .site-info .footer-right img {
       margin-top: -13px; }
+    footer .site-info .footer-bottom {
+      color: white;
+      font-family: Tinos;
+      font-size: 17px;
+      letter-spacing: 0;
+      text-decoration: underline;
+      padding-top: 130px;
+      display: block; }
   footer #footer-link {
     margin: 0 auto;
     color: white;
